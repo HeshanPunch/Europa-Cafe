@@ -1,0 +1,107 @@
+/* font-family: 'Arima Madurai', cursive;
+font-family: 'Caveat', cursive; */
+.header{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+.header > h1{
+    letter-spacing: 5px;
+    color: rgba(222, 184, 135, 0.7);
+    text-align: center;
+    font-family:'Arima Madurai', cursive;
+    font-size: 120px;
+}
+
+body{
+    background-image: url(/parta/images/coffee-vibe.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-family: 'Arima Madurai', cursive;
+    color: white;
+}
+
+.body-container{
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(221, 179, 124, 0.95);
+    border-radius: 25px;
+}
+
+h3{
+    font-family:'Arima Madurai', cursive;
+    font-size: 30px;
+    color: black;
+    margin-left:2%;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+h4{
+    font-family:'Arima Madurai', cursive;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.formTxt{
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 1px;
+    color: black;
+}
+.orderTxt{
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bolder;
+}
+
+.input{
+    margin-left:2%;
+    margin-bottom: 25px;
+    border: 3px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.input-num{
+    
+    margin-bottom: 25px;
+    height: 0.7rem;
+    border: 3px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 5px 5px;
+    width: 2.5rem;
+}
+
+#todayDate{
+    text-align: right;
+    font-size: 50%;
+}
+
+.outputTxt{
+    font-size: 15px;
+    text-align: center;
+    font-family:'Arima Madurai', cursive;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bolder;  
+}
+
+
+
+

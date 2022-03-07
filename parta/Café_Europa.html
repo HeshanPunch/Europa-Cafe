@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Europa</title>
+    
+    <link rel="stylesheet" type= "text/css" href="Styles_Cafe.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;400;900&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="Scripts_Cafe.js"></script>
+</head>
+<body onLoad='getDate()'>
+    <p id="todayDate"></p>
+    <div class="header">
+        
+        <h1>Café Europa</h1>
+        
+        
+    </div>
+    
+    <div class="bg">
+        <div >
+            
+        </div>
+        
+        
+        <div class="body-container">
+            
+            <h3>Order Online</h3>
+            <!-- Include the current date at the top of the Page -->
+            
+            <!--The Customer will enter their contact information-->
+            <form name="orderForm"> 
+                
+                <div>
+                    <label class="formTxt" for="firstName">First Name</label><br>
+                    
+                    <input name="firstName" class="input" type="text" id="firstName" maxlength="25" pattern="[A-Za-z- ]{1,30}"  title="Accepts alphabetical characters and hyphens" placeholder="John" autofocus required><br>
+                </div>
+                
+                <div>
+                    <label class="formTxt" for="lastName">Last Name</label><br>
+                    
+                    <input name="lastName" class="input" type="text" id="lastName" maxlength="25" pattern="[A-Za-z- ]{1,30}"  title="Accepts alphabetical characters and hyphens" placeholder="Smith" required><br>
+                </div>
+                
+                
+                <div>                
+                    <label class="formTxt" for="tel">Contact Number</label><br>
+                    
+                    <input name="tel" class="input" type="tel" id="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{}" placeholder="123-123-1234" required> <br>
+                </div>
+                
+                <div>                
+                    <label class="formTxt" for="pickup">Pickup Time</label><br>
+                    
+                    <input name="pickup" class="input" type="datetime-local" id="pickup"  required> <br>
+                </div>
+                
+                <!-- order details -->
+                     
+                <h4>Neapolitan Style Pizza</h4>
+                <div>
+                    <input class="input-num" type="number" id="marg" name="marg"  min="0" placeholder="0">
+                    <label class="orderTxt" for="marg">Margherita - $12.00</label><br>
+                    
+                    <input class="input-num" type="number" id="quattro" name="quattro"  min="0" placeholder="0">
+                    <label class="orderTxt" for="quattro">Quattro Formaggi - $12.50</label><br>
+                    
+                    <input class="input-num" type="number" id="capri" name="capri"  min="0" placeholder="0">
+                    <label class="orderTxt" for="capri">Capricciosa - $13.00</label>
+                    
+                </div>
+                
+                <h4>Sandwich Choices</h4>
+                
+                <div>
+                    <input class="input-num" type="number" id="schnit" name="schnit"  min="0" placeholder="0">
+                    <label class="orderTxt" for="schnit">Schnitzel - $8.50</label><br>
+                    
+                    <input class="input-num" type="number" id="mix" name="mix"  min="0" placeholder="0">
+                    <label class="orderTxt" for="mix">Mixed Grill - $9.50</label><br>
+                    
+                    <input class="input-num" type="number" id="beef" name="beef"  min="0" placeholder="0">
+                    <label class="orderTxt" for="beef">Big Beef on a Bun - $10.00</label>
+                    
+                </div>
+                
+                <h4>Bevarages</h4>
+                
+                <div>
+                    <input class="input-num" type="number" id="coffee" name="coffee"  min="0" placeholder="0">
+                    <label class="orderTxt" for="coffee">Coffee - $2.00</label><br>
+                    
+                    <input class="input-num" type="number" id="latte" name="latte"  min="0" placeholder="0">
+                    <label class="orderTxt" for="latte">Latte - $2.50
+                    </label><br>
+                    
+                    <input class="input-num" type="number" id="drink" name="drink"  min="0" placeholder="0">
+                    <label class="orderTxt" for="drink">Soft drink - $1.75 </label>
+                    
+                </div>
+                
+                <div>
+                    <!-- output -->
+                    <p id="printcustomerinfo" class="outputTxt"></p>
+                    <p id="printorder" class="outputTxt"></p>
+                    <p id="printtotal" class="outputTxt"></p>
+                    
+                    
+                    <!-- buttons -->
+                    <br><input type="submit" class="input"  value="Submit" onclick="printOnPage1()">
+                    
+                    <input type="reset" class="input"  value="Reset"><br>
+                </div>
+                
+                
+                
+            </form>
+            
+            
+            
+        </div>
+    </div> 
+</body>
+
+</html>
